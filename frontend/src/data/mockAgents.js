@@ -1,0 +1,53 @@
+export const mockAgents = [
+  {
+    id: 'planner',
+    name: 'Planner Agent',
+    role: 'Task decomposition',
+    description: 'Breaks complex industrial analysis requests into executable, ordered steps.',
+    status: 'ONLINE',
+    currentTask: 'Decomposing maintenance inspection workflow',
+    stats: { tasksCompleted: 1247, successRate: 98.4, avgExecution: '2.1s' },
+    color: 'sky',
+  },
+  {
+    id: 'research',
+    name: 'Research / RAG Agent',
+    role: 'Knowledge retrieval',
+    description: 'Retrieves relevant information from private organizational knowledge bases using semantic search.',
+    status: 'ONLINE',
+    currentTask: 'Retrieving maintenance history for bearing assembly',
+    stats: { tasksCompleted: 3891, successRate: 97.2, avgExecution: '1.4s' },
+    color: 'violet',
+  },
+  {
+    id: 'vision',
+    name: 'Vision Agent',
+    role: 'Multimodal analysis',
+    description: 'Analyzes images and visual industrial information to detect anomalies and defects.',
+    status: 'ONLINE',
+    currentTask: 'Analyzing thermal imaging of motor housing',
+    stats: { tasksCompleted: 856, successRate: 95.8, avgExecution: '3.2s' },
+    color: 'amber',
+  },
+  {
+    id: 'analysis',
+    name: 'Analysis Agent',
+    role: 'Evidence synthesis',
+    description: 'Combines retrieved evidence and multimodal information to produce actionable conclusions.',
+    status: 'IDLE',
+    currentTask: 'Awaiting new analysis request',
+    stats: { tasksCompleted: 2103, successRate: 96.1, avgExecution: '1.8s' },
+    color: 'emerald',
+  },
+];
+
+export const agentTimeline = [
+  { id: 1, agent: 'Planner Agent', action: 'Decomposed inspection task into 5 steps', time: '2 min ago', status: 'Completed' },
+  { id: 2, agent: 'RAG Agent', action: 'Retrieved 12 knowledge chunks from Maintenance KB', time: '2 min ago', status: 'Completed' },
+  { id: 3, agent: 'Vision Agent', action: 'Analyzed Machine_Image.jpg for thermal anomalies', time: '1 min ago', status: 'Completed' },
+  { id: 4, agent: 'Analysis Agent', action: 'Generated bearing overheating report', time: '20 sec ago', status: 'Completed' },
+  { id: 5, agent: 'Planner Agent', action: 'Decomposed safety audit workflow', time: '15 min ago', status: 'Completed' },
+  { id: 6, agent: 'RAG Agent', action: 'Searched Safety Guidelines collection', time: '15 min ago', status: 'Completed' },
+  { id: 7, agent: 'Vision Agent', action: 'Flagged corrosion in pump assembly image', time: '32 min ago', status: 'Failed' },
+  { id: 8, agent: 'Analysis Agent', action: 'Compiled equipment inspection summary', time: '32 min ago', status: 'Completed' },
+];
